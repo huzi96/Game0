@@ -44,9 +44,11 @@
             this.MainBoard.Name = "MainBoard";
             this.MainBoard.Size = new System.Drawing.Size(600, 600);
             this.MainBoard.TabIndex = 0;
+            this.MainBoard.Paint += new System.Windows.Forms.PaintEventHandler(this.MainBoard_Paint);
             // 
             // Up
             // 
+            this.Up.Enabled = false;
             this.Up.Location = new System.Drawing.Point(810, 144);
             this.Up.Name = "Up";
             this.Up.Size = new System.Drawing.Size(125, 125);
@@ -57,6 +59,7 @@
             // 
             // Down
             // 
+            this.Down.Enabled = false;
             this.Down.Location = new System.Drawing.Point(810, 389);
             this.Down.Name = "Down";
             this.Down.Size = new System.Drawing.Size(125, 125);
@@ -67,6 +70,7 @@
             // 
             // Left
             // 
+            this.Left.Enabled = false;
             this.Left.Location = new System.Drawing.Point(679, 266);
             this.Left.Name = "Left";
             this.Left.Size = new System.Drawing.Size(125, 125);
@@ -77,6 +81,7 @@
             // 
             // Right
             // 
+            this.Right.Enabled = false;
             this.Right.Location = new System.Drawing.Point(941, 266);
             this.Right.Name = "Right";
             this.Right.Size = new System.Drawing.Size(125, 125);
